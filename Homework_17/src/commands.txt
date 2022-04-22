@@ -1,0 +1,4 @@
+  608  java -jar "/Users/ashvin/Documents/Algorithms/Homework_17/dist/Homework_17.jar" -a Homework_12.java PQue.java PriorityQueue.java Read.java Nonexistent.java > count.txt
+  609  wc -l Homework_12.java PQue.java PriorityQueue.java Read.java Nonexistent.java > wc.txt
+  610  diff count.txt wc.txt > diff.txt
+  611  history 4 > commands.txt

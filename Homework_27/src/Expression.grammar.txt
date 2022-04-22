@@ -1,0 +1,39 @@
+expression -> term
+//expression -> term assign term
+expression -> term assign expression
+
+term -> factor
+//term -> term plus factor
+term -> factor plus term
+
+factor -> primary
+//factor -> factor times primary
+factor -> primary times factor
+
+primary -> number
+primary -> identifier
+primary -> sign primary
+primary -> '(' expression ')'
+
+assign -> '='
+assign -> '+='
+assign -> '-='
+assign -> '*='
+assign -> '/='
+
+plus -> '+'
+plus -> '-'
+
+times -> '*'
+times -> '/'
+
+sign -> '+'
+sign -> '-'
+
+identifier -> identifier
+identifier -> identifier operator
+identifier -> operator identifier 
+operator -> '++'
+operator -> '--'
+
+
